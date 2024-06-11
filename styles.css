@@ -183,8 +183,9 @@ nav ul li:not(:last-child)::after {
     background-color: black;
     
     height:22px;
-    width:1200px;
+    width:1040px;
     margin-top:255px;
+    transform: translate(-20px, -8px);
 }
 .post {
     background-color: rgba(0, 0, 0, 0.8);
