@@ -1,0 +1,195 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('font/Montserrat-Italic-VariableFont_wght.ttf') format('woff2'),
+         url('font/Montserrat-VariableFont_wght.ttf') format('woff');
+}
+
+
+
+
+.background {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.hero {
+    text-align: center;
+    font-family: 'Montserrat';
+    letter-spacing: 24px;
+    padding: 40px 0 0px;
+    text-decoration: overline underline;
+    text-decoration-thickness: 2px;
+}
+
+.hero h1 {
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+}
+
+nav {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+nav ul li:not(:last-child)::after {
+    content: ""; /* 가상 요소에 내용 없음 */
+    display: inline-block; /* 블록 요소로 표시하여 width를 적용 */
+    width: 2px; /* 선의 너비 설정 */
+    height: 20px; /* 선의 높이 설정 */
+    background-color: white; /* 선의 색상 설정 */
+    margin-left: 50px; /* 선과 항목 사이의 간격 설정 */
+    margin-right: 5px; /* 선과 항목 사이의 간격 설정 */
+    vertical-align: middle; /* 선을 수직 중앙에 정렬 */
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0; /* Reduced padding */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 700px;
+    position: relative;
+}
+
+.search-container input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1;
+}
+.search-container::before {
+    content: ''; /* 가상 요소에 내용 없음 */
+    position: absolute; /* 절대 위치로 설정 */
+    top: 50%; /* 상위 가운데 위치 */
+    left: 13%; /* 왼쪽 가운데 위치 */
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    width: 1px; /* 선의 너비 설정 */
+    height: 70%; /* 선의 높이 설정 */
+    background-color: white; /* 선의 색상 설정 */
+}
+.search-container select {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.post-section {
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.post-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-slider {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.post {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.post-time {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.post-detail {
+    font-size: 16px;
+    color: #ddd;
+}
