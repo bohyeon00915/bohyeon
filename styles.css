@@ -166,11 +166,14 @@ nav ul li:not(:last-child)::after {
     margin: 0 auto;
 }
 .post-title {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 40px;
+    width: 1040px;
+    transform: translate(-20px, -19px);
 }
 .post-section h2 {
     margin: 0;
+    transform: translate(+20px, +2px);
 }
 
 .post-slider {
@@ -180,7 +183,7 @@ nav ul li:not(:last-child)::after {
 }
 
 .black-space {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     
     height:22px;
     width:1040px;
