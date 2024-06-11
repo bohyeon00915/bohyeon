@@ -49,22 +49,30 @@ body, html {
 .hero {
     text-align: center;
     font-family: 'Montserrat';
-    letter-spacing: 24px;
-    padding: 40px 0 0px;
-    text-decoration: overline underline;
-    text-decoration-thickness: 2px;
+    letter-spacing: 36px;
+    width: 30%;
+    height: 100px;
+    margin: 40px auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬을 위해 사용합니다. */
+    justify-content: center;
 }
 
 .hero h1 {
     font-size: 100px;
     margin: 0;
     font-weight: bold;
+    padding-top: 5px; /* 위쪽 간격을 조정합니다. 필요에 따라 변경할 수 있습니다. */
+    padding-bottom: 0px;
+    transform: translate(+14px, -8px);
 }
 
 nav {
     background-color: transparent;
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
 }
 
 nav ul {
@@ -157,10 +165,12 @@ nav ul li:not(:last-child)::after {
     height: 450px;
     margin: 0 auto;
 }
-
+.post-title {
+    background-color: black;
+    height: 40px;
+}
 .post-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .post-slider {
@@ -169,6 +179,13 @@ nav ul li:not(:last-child)::after {
     justify-content: center;
 }
 
+.black-space {
+    background-color: black;
+    
+    height:22px;
+    width:1200px;
+    margin-top:255px;
+}
 .post {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
